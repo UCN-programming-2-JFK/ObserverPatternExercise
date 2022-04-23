@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>12</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1008</x>
+      <y>552</y>
+      <w>384</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>lanmanager.model::Match
+--
+-players : List&lt;Player&gt;
+-winner: Player
+--
++Match(Player player1, Player player2): ctor
++getWinner(): Player
++setWinner(Player player): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>888</x>
+      <y>156</y>
+      <w>504</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+lanmanager.interfaces::MatchSubject
+--
+
+--
++registerMatchObserver(MatchObserver matchObserver): void
++unregisterMatchObserver(MatchObserver matchObserver): void
++notifyMatchObservers(Match match): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>912</x>
+      <y>372</y>
+      <w>480</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>lanmanager::LanManagerMatchSubject
+--
+-observerList : ArrayList&lt;MatchObserver&gt;
+--
++registerMatchObserver(MatchObserver observer): void
++unregisterMatchObserver(MatchObserver observer): void
++notifyMatchObservers(Match match): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1080</x>
+      <y>792</y>
+      <w>312</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lanmanager.model::Player
+--
+-gamerTag: String
+--
++Player(String gamerTag): ctor
++getGamerTag(): String
++setGamerTag(String gamerTag): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>504</x>
+      <y>372</y>
+      <w>300</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+lanmanager.interfaces::MatchObserver
+--
+
+--
++notify(Match match): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1140</x>
+      <y>288</y>
+      <w>36</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1176</x>
+      <y>708</y>
+      <w>36</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;&gt;&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>792</x>
+      <y>420</y>
+      <w>144</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;&gt;&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;100.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>204</x>
+      <y>564</y>
+      <w>408</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lanmanager.interfaces::NewsAgentMatchObserver
+--
+
+--
++notify(Match match): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>312</x>
+      <y>708</y>
+      <w>408</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lanmanager.interfaces::MatchEnderMatchObserver
+--
+
+--
++notify(Match match): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>492</x>
+      <y>840</y>
+      <w>408</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lanmanager.interfaces::NextMatchObserver
+--
+
+--
++notify(Match match): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>468</y>
+      <w>36</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>648</x>
+      <y>468</y>
+      <w>36</w>
+      <h>264</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;200.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>768</x>
+      <y>468</y>
+      <w>36</w>
+      <h>396</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;310.0</additional_attributes>
+  </element>
+</diagram>
