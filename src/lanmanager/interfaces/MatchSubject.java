@@ -6,5 +6,5 @@ public interface MatchSubject
 {
     public void registerMatchObserver(MatchObserver MatchObserver);
     public void unregisterMatchObserver(MatchObserver MatchObserver);
-    public void notifyMatchObservers(Match Match);
+    public void notifyMatchObservers(Match match);
 }
