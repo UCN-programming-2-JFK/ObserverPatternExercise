@@ -1,5 +1,9 @@
-# ObserverPatternExercise
+# Observer Pattern Exercise
 This repository contains the solution to an exercise, where the student must implement the subscriber/listener classes for a system which manages a LAN gaming event.
+
+<img src="https://github.com/UCN-programming-2-JFK/ObserverPatternExercise/assets/3811290/fc1992ca-72e6-4992-863b-e9d1408a813e" width="300"/>
+
+
 The solution uses the software design pattern [Observer](https://en.wikipedia.org/wiki/Observer_pattern) to solve the challenge. 
 
 # Classes
